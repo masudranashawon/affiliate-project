@@ -1,0 +1,46 @@
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Custom Css section */
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.navbar {
+  background: rgba(256, 256, 256, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 98;
+}
+.nav-item a {
+  transition: all 0.3s;
+}
+.nav-item:nth-child(7):hover a {
+  background-color: #212529;
+  border-color: #212529;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.nav-item:nth-child(8):hover a {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+/* .pd-btn:nth-child(1):hover {
+  background-color: #212529;
+  border-color: #212529;
+} */
+
+@media only screen and (min-width: 992px) {
+  .pd-btn {
+    padding: 0.7rem 2rem !important;
+    border-radius: 1.4rem;
+  }
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mb-cs {
+    margin-bottom: 0.25rem !important;
+  }
+}
