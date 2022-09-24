@@ -24,6 +24,30 @@ body {
 .nav-item:nth-child(8):hover a {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
+
+.hero-section {
+  margin-top: 68px;
+}
+.carousel-item {
+  height: calc(100vh - 62px);
+  object-fit: cover;
+}
+.bg-1 {
+  background: url(./images/marvin-meyer.jpg) no-repeat center center/cover !important;
+}
+
+.bg-2 {
+  background: url(./images/pexels-anna-nekrashevich.jpg) no-repeat center center /
+    cover;
+}
+.bg-3 {
+  background: url(./images/pexels-canva-studio.jpg) no-repeat center center /
+    cover;
+}
+.bg-4 {
+  background: url(./images/pexels-lukas.jpg) no-repeat center center / cover;
+}
+
 /* .pd-btn:nth-child(1):hover {
   background-color: #212529;
   border-color: #212529;
