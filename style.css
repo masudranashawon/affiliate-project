@@ -1,6 +1,54 @@
 /* Google Font CDN Link */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/*Custom Scroll bar  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #263242;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100vh;
+  background: linear-gradient(
+    rgb(59, 130, 246),
+    rgb(147, 51, 234),
+    rgb(255, 0, 140)
+  );
+  z-index: 90;
+}
+
+.sec-icon {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.sec-icon::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: -70px;
+  margin-top: -5.5px;
+  top: 60%;
+  background: #333333;
+  width: 50px;
+}
+
+.sec-icon::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  right: -70px;
+  margin-top: -5.5px;
+  top: 60%;
+  background: #333;
+  width: 50px;
+}
 /* Custom Css section */
 body {
   font-family: "Roboto", sans-serif !important;
@@ -10,11 +58,13 @@ body {
   background: rgba(256, 256, 256, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  z-index: 98;
+  z-index: 999;
 }
+
 .nav-item a {
   transition: all 0.3s;
 }
+
 .nav-item:nth-child(7):hover a {
   background-color: #212529;
   border-color: #212529;
@@ -28,43 +78,60 @@ body {
 .hero-section {
   margin-top: 68px;
 }
+
 .carousel-item {
-  height: calc(100vh - 62px);
+  height: calc(100vh - 68px);
   object-fit: cover;
 }
+
+.carousel-caption {
+  width: 100%;
+  height: 100%;
+  display: grid !important;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: static;
+}
+
 .bg-1 {
-  background: url(./images/marvin-meyer.jpg) no-repeat center center/cover !important;
+  background: linear-gradient(
+      317deg,
+      rgba(29, 64, 225, 0.6),
+      rgba(235, 0, 235, 0.6)
+    ),
+    url(./images/marvin-meyer.jpg) no-repeat center center/cover !important;
 }
 
 .bg-2 {
-  background: url(./images/pexels-anna-nekrashevich.jpg) no-repeat center center /
-    cover;
+  background: linear-gradient(
+      317deg,
+      rgba(218, 29, 225, 0.6),
+      rgba(235, 0, 0, 0.6)
+    ),
+    url(./images/pexels-anna-nekrashevich.jpg) no-repeat center center / cover;
 }
+
 .bg-3 {
-  background: url(./images/pexels-canva-studio.jpg) no-repeat center center /
-    cover;
+  background: linear-gradient(
+      317deg,
+      rgba(29, 225, 225, 0.6),
+      rgba(0, 235, 39, 0.6)
+    ),
+    url(./images/pexels-canva-studio.jpg) no-repeat center center / cover;
 }
+
 .bg-4 {
-  background: url(./images/pexels-lukas.jpg) no-repeat center center / cover;
+  background: linear-gradient(
+      317deg,
+      rgba(182, 225, 29, 0.6),
+      rgba(235, 0, 0, 0.6)
+    ),
+    url(./images/pexels-lukas.jpg) no-repeat center center / cover;
 }
 
-/* .pd-btn:nth-child(1):hover {
-  background-color: #212529;
-  border-color: #212529;
-} */
-
-@media only screen and (min-width: 992px) {
-  .pd-btn {
-    padding: 0.7rem 2rem !important;
-    border-radius: 1.4rem;
-  }
-  .navbar-expand-lg .navbar-nav {
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .mb-cs {
-    margin-bottom: 0.25rem !important;
-  }
+.main-heading {
+  font-size: 4rem !important;
+  color: whitesmoke;
 }
