@@ -1,5 +1,50 @@
 /* Google Font CDN Link */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --site-secondary: rgb(255, 23, 131) !important;
+  --btn-hover: #212529 !important;
+}
+
+.s-d {
+  background: var(--site-secondary);
+  border-color: var(--site-secondary);
+  color: whitesmoke;
+}
+
+.s-d {
+  background: var(--site-secondary);
+  border-color: var(--site-secondary);
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: var(--btn-hover) !important;
+  border-color: var(--btn-hover);
+  color: whitesmoke !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4) !important;
+}
+.hero-btn:hover {
+  color: #212529 !important;
+  background-color: #f8f9fa !important;
+  border-color: #f8f9fa !important;
+}
+.btn:active {
+  border: 2px solid rgb(73, 73, 73) !important;
+}
+
+::selection {
+  background: rgb(255, 23, 131);
+  color: #fff;
+  font-weight: bolder;
+}
+
+.section-heading {
+  /* color: var(--site-secondary); */
+  font-weight: 600;
+}
 
 /*Custom Scroll bar  */
 ::-webkit-scrollbar {
@@ -18,7 +63,6 @@
     rgb(147, 51, 234),
     rgb(255, 0, 140)
   );
-  z-index: 90;
 }
 
 .sec-icon {
@@ -73,6 +117,7 @@ body {
 
 .nav-item:nth-child(8):hover a {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  background-color: var(--btn-hover);
 }
 
 .hero-section {
