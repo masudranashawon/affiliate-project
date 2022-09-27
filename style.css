@@ -1,8 +1,12 @@
 /* Google Font CDN Link */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 :root {
   --site-secondary: rgb(255, 23, 131) !important;
   --btn-hover: #212529 !important;
+}
+body {
+  overflow-x: hidden;
 }
 .b-class-secondary {
   color: var(--site-secondary);
@@ -339,7 +343,7 @@ body {
   color: var(--site-secondary);
 }
 .advertisers-service-sec .service-card:hover .icon-wrapper {
-  color: #2c7bfe;
+  color: #0dcaf0;
 }
 .advertisers-service-sec .service-card:hover h3 {
   color: #ffffff;
@@ -348,6 +352,23 @@ body {
   color: #f0f0f0;
 }
 /* PERTNER CAROSOL LOGO */
-.pertner {
-  background: #f5f5f5;
+.work-with .slide {
+  justify-content: center;
+  display: grid;
+}
+
+.work-with .slide img {
+  width: 10rem;
+  filter: blur(2px) grayscale();
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.work-with .slide:hover img {
+  width: 10rem;
+  filter: none;
+}
+.work-with .work-title {
+  background-color: var(--site-secondary);
+  color: #fff;
 }
