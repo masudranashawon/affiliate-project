@@ -461,3 +461,129 @@ body {
 .publishers-service-sec .service-card:hover p {
   color: #f0f0f0;
 }
+
+/* Team Card  */
+/*Profile Card 3*/
+.team-card {
+  /* width: 100%; */
+  overflow: hidden;
+  text-align: center;
+  height: 350px;
+  border: none;
+  cursor: pointer;
+}
+.team-card .background-block {
+  float: left;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.team-card .background-block .background {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.9;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-filter: hue-rotate(245deg) blur(0.2px);
+  filter: hue-rotate(245deg) blur(0.2px);
+  transition: all 0.3s;
+  height: 100%;
+}
+.team-card .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  color: #232323;
+  float: left;
+  background: #efefef;
+  height: 50%;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  z-index: 90;
+}
+.team-card .card-content::before {
+  content: "";
+  background: #efefef;
+  width: 120%;
+  height: 100%;
+  left: 11px;
+  bottom: 51px;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-13deg);
+  transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
+}
+.team-card:hover .background-block .background {
+  -webkit-filter: hue-rotate(0deg) blur(0.2px);
+  filter: hue-rotate(0deg) blur(0.2px);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* .team-card:hover .card-content::before {
+  width: 120%;
+  height: 300%;
+  transform: rotate(100deg);
+} */
+.team-card .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index: 91;
+}
+
+.team-card h3 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 22px !important;
+  transition: all 0.3;
+  color: #0d6efd;
+}
+
+.team-card:hover h3 {
+  color: var(--site-secondary);
+}
+
+.team-card h3 small {
+  display: block !important;
+  font-size: 15px !important;
+  margin-top: 10px !important;
+  color: #232323;
+}
+.team-card i {
+  display: inline-block;
+  font-size: 16px;
+  color: #232323;
+  text-align: center;
+  border: 1px solid #232323;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.team-card .icon-block {
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+}
+.team-card .icon-block a {
+  text-decoration: none;
+}
+.team-card i:hover {
+  /* background-color: #232323; */
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+  text-decoration: none;
+}
+
+.team-card:hover {
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4) !important;
+}
