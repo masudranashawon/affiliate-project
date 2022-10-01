@@ -30,66 +30,68 @@
   <body>
     <header>
       <!-- Navar Starts -->
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img src="./images/affiliate-logo.png"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#advertisers">Advertisers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#publishers">Publishers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#team">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item me-lg-1 ms-lg-1 mb-md-1 mb-sm-1 mb-cs">
-                <a
-                  href="#"
-                  class="nav-link fw-bold shadow btn btn-info text-white btn-sm pd-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#loginModal"
-                  data-bs-whatever="@getbootstrap"
-                  >Login</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="#"
-                  class="nav-link fw-bold shadow s-d text-white btn-sm pd-btn btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#loginModal"
-                  data-bs-whatever="@getbootstrap"
-                  >Sign Up</a
-                >
-              </li>
-            </ul>
+      <section id="navar-section">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img src="./images/affiliate-logo.png"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#advertisers">Advertisers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#publishers">Publishers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item me-lg-1 ms-lg-1 mb-md-1 mb-sm-1 mb-cs">
+                  <a
+                    href="#"
+                    class="nav-link fw-bold shadow btn btn-info text-white btn-sm pd-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                    data-bs-whatever="@getbootstrap"
+                    >Login</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link fw-bold shadow s-d text-white btn-sm pd-btn btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                    data-bs-whatever="@getbootstrap"
+                    >Sign Up</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </section>
       <!-- Navar Ended -->
 
       <!-- Hero Section Starts -->
@@ -252,9 +254,9 @@
     </header>
     <main>
       <!-- MODAL SECTION -->
-      <section>
+      <section class="modal-section">
         <div
-          class="modal fade"
+          class="modal fade modal-dialog modal-xl"
           id="loginModal"
           tabindex="-1"
           aria-labelledby="exampleModalLabel"
@@ -262,7 +264,82 @@
         >
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header">
+              <div class="content">
+                <!-- <div class="container"> -->
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="./images/login-img.jpg"
+                      alt="Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-6 contents">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        <div class="mb-4">
+                          <h3>Sign In</h3>
+                          <p class="mb-4">
+                            Lorem ipsum dolor sit amet elit. Sapiente sit aut
+                            eos consectetur adipisicing.
+                          </p>
+                        </div>
+                        <form action="#" method="post">
+                          <div class="form-group first">
+                            <label for="username">Username</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="username"
+                            />
+                          </div>
+                          <div class="form-group last mb-4">
+                            <label for="password">Password</label>
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="password"
+                            />
+                          </div>
+                          <div class="d-flex mb-5 align-items-center">
+                            <label class="control control--checkbox mb-0"
+                              ><span class="caption">Remember me</span>
+                              <input type="checkbox" checked />
+                              <div class="control__indicator"></div>
+                            </label>
+                            <span class="ml-auto"
+                              ><a href="#" class="forgot-pass"
+                                >Forgot Password</a
+                              ></span
+                            >
+                          </div>
+                          <input
+                            type="submit"
+                            value="Log In"
+                            class="btn btn-block btn-primary"
+                          />
+                          <span class="d-block text-left my-4 text-muted"
+                            >&mdash; or login with &mdash;</span
+                          >
+                          <div class="social-login">
+                            <a href="#" class="facebook">
+                              <span class="icon-facebook mr-3"></span>
+                            </a>
+                            <a href="#" class="twitter">
+                              <span class="icon-twitter mr-3"></span>
+                            </a>
+                            <a href="#" class="google">
+                              <span class="icon-google mr-3"></span>
+                            </a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
+              <!-- <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Login</h5>
                 <button
                   type="button"
@@ -314,7 +391,7 @@
                   Back Home
                 </button>
                 <input type="submit" value="Login" class="btn btn-success" />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -323,7 +400,7 @@
       <section id="about" class="pt-5 pb-5">
         <div class="container">
           <div class="row">
-            <div class="" class="col-md-12">
+            <div class="col-md-12">
               <div class="section-header text-center">
                 <h2 class="fw-bold fs-1">
                   About <span class="text-primary">Us</span>
@@ -367,7 +444,7 @@
         </div>
       </section>
       <!-- COUNTER SECTION -->
-      <section class="counter-sec">
+      <section id="counter" class="counter-sec">
         <div class="container">
           <div class="col-lg-12">
             <div class="row">
@@ -606,7 +683,7 @@
           </div>
         </div>
       </section>
-      <section class="work-with pt-5 pb-5">
+      <section id="work" class="work-with pt-5 pb-5">
         <div class="container">
           <div class="row">
             <div class="section-header text-center">
@@ -869,8 +946,193 @@
           </div>
         </div>
       </section>
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact-section pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="section-header text-center">
+              <h2 class="fw-bold fs-1">
+                Contact <span class="b-class-secondary">Us</span>
+              </h2>
+              <p class="sec-icon"><i class="fa-solid fa-phone"></i></p>
+            </div>
+          </div>
+          <div class="row mt-5 mt-md-2">
+            <div class="p-sm-3 col-md-7 col-sm-12 col-xs-12">
+              <h2 class="b-class-secondary mb-3">
+                Send Message <i class="fa-regular fa-comment-dots"></i>
+              </h2>
+              <div class="form-floating mb-3 rounded-5">
+                <input
+                  type="text"
+                  class="form-control fw-bold rounded-5"
+                  id="name"
+                  placeholder="Username"
+                />
+                <label for="name">Enter Your Name</label>
+              </div>
+              <div class="form-floating mb-3 rounded-5">
+                <input
+                  type="email"
+                  class="form-control fw-bold rounded-5"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+                <label for="email">Email address</label>
+              </div>
+              <div class="form-floating message mb-3 rounded-5">
+                <textarea
+                  class="form-control message fw-bold rounded-5"
+                  id="message"
+                  rows="3"
+                  placeholder="Password"
+                ></textarea>
+                <label for="message">Your message gose here...</label>
+                <button class="btn mt-3" type="submit">Submit</button>
+              </div>
+            </div>
+            <div class="p-sm-3 col-md-5 col-sm-12 col-xs-12 mt-5 mt-md-2">
+              <div class="single-cta">
+                <div class="cta-text">
+                  <h4 class="mb-lg-3 fw-bold mb-3 pt-2 pb-2">
+                    <i class="fas fa-map-marker-alt"></i> Location
+                  </h4>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58312.165403183935!2d89.21494882379929!3d24.013062425811704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe84d98fa5bf3d%3A0xb038902617eb9884!2sPabna!5e0!3m2!1sen!2sbd!4v1664622553777!5m2!1sen!2sbd"
+                    style="width: 100%"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="single-cta">
+                <div class="cta-text">
+                  <h4 class="mb-lg-3 fw-bold mb-3 pt-2 pb-2">
+                    <i class="fas fa-phone"></i> Call us
+                  </h4>
+                  <span class="d-block">+880 1710-00000</span>
+                  <span class="d-block">+880 1710-00000</span>
+                </div>
+              </div>
+              <div class="single-cta">
+                <div class="cta-text">
+                  <h4 class="mb-lg-3 fw-bold mb-3 pt-2 pb-2">
+                    <i class="far fa-envelope-open"></i> Mail us
+                  </h4>
+                  <span>support@affiliate.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a class="logo-link" href="index.html"
+                    ><img
+                      src="./images/affiliate-logo.png"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                    sed do eiusmod tempor incididuntut consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us on</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"
+                    ><i class="fa-brands fa-instagram insta-bg"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa-brands fa-linkedin linkdin-bg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Some Useful Links</h3>
+                </div>
+                <ul class="row ps-0">
+                  <div class="col-5">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#advertisers">Advertisers</a></li>
+                    <li><a href="#publishers">Publishers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </div>
+                  <div class="col-7">
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#team">Expert Team</a></li>
+                    <li><a href="#work">Brand's</a></li>
+                    <li><a href="#counter">Our Progress</a></li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <!-- <button><i class="fab fa-telegram-plane"></i></button> -->
+                    <button><i class="fa-solid fa-paper-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2022, All Right Reserved
+                  <a href="#">affiliate.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

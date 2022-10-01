@@ -101,6 +101,260 @@ body {
   background: #333;
   width: 50px;
 }
+/* Modal CSS STARTS */
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+.content {
+  padding: 7rem 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .content .bg {
+    height: 500px;
+  }
+}
+
+.content .contents,
+.content .bg {
+  width: 50%;
+}
+@media (max-width: 1199.98px) {
+  .content .contents,
+  .content .bg {
+    width: 100%;
+  }
+}
+.content .contents .form-group,
+.content .bg .form-group {
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 15px 15px;
+  border-bottom: none;
+  position: relative;
+  background: #edf2f5;
+  border-bottom: 1px solid #e6edf1;
+}
+.content .contents .form-group label,
+.content .bg .form-group label {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.content .contents .form-group input,
+.content .bg .form-group input {
+  background: transparent;
+}
+.content .contents .form-group.first,
+.content .bg .form-group.first {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.content .contents .form-group.last,
+.content .bg .form-group.last {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.content .contents .form-group label,
+.content .bg .form-group label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 0;
+  color: #b3b3b3;
+}
+.content .contents .form-group.focus,
+.content .bg .form-group.focus {
+  background: #fff;
+}
+.content .contents .form-group.field--not-empty label,
+.content .bg .form-group.field--not-empty label {
+  margin-top: -20px;
+}
+.content .contents .form-control,
+.content .bg .form-control {
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  border-radius: 0;
+}
+.content .contents .form-control:active,
+.content .contents .form-control:focus,
+.content .bg .form-control:active,
+.content .bg .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.content .bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.content a {
+  color: #888;
+  text-decoration: underline;
+}
+
+.content .btn {
+  height: 54px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.content .forgot-pass {
+  position: relative;
+  top: 2px;
+  font-size: 14px;
+}
+
+.social-login a {
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.social-login a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.social-login a:hover {
+  color: #fff;
+}
+.social-login a.facebook {
+  background: #3b5998;
+}
+.social-login a.facebook:hover {
+  background: #344e86;
+}
+.social-login a.twitter {
+  background: #1da1f2;
+}
+.social-login a.twitter:hover {
+  background: #0d95e8;
+}
+.social-login a.google {
+  background: #ea4335;
+}
+.social-login a.google:hover {
+  background: #e82e1e;
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.control .caption {
+  position: relative;
+  top: 0.2rem;
+  color: #888;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border-radius: 4px;
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+
+.control input:checked ~ .control__indicator {
+  background: #6c63ff;
+}
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #847dff;
+}
+
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.control__indicator:after {
+  font-family: "icomoon";
+  content: "\e5ca";
+  position: absolute;
+  display: none;
+  font-size: 16px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.control input:checked ~ .control__indicator:after {
+  display: block;
+  color: #fff;
+}
+
+.control--checkbox .control__indicator:after {
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+
+.control--checkbox input:disabled:checked ~ .control__indicator {
+  background-color: #7e0cf5;
+  opacity: 0.2;
+}
+
+/* Modal CSS ENDED */
+
 /* Custom Css section */
 body {
   font-family: "Roboto", sans-serif !important;
@@ -577,13 +831,254 @@ body {
   text-decoration: none;
 }
 .team-card i:hover {
-  /* background-color: #232323; */
-  background-color: #0d6efd;
-  border-color: #0d6efd;
   color: #fff;
   text-decoration: none;
 }
-
+.team-card .icon-block a:nth-child(1):hover i {
+  background-color: #0081dc;
+  border-color: #0081dc;
+}
+.team-card .icon-block a:nth-child(2):hover i {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+.team-card .icon-block a:nth-child(3):hover i {
+  background: linear-gradient(rgb(126, 2, 175), rgb(252, 10, 103));
+  border: none;
+}
 .team-card:hover {
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4) !important;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  background-color: #f5f5f5;
+}
+
+.contact-section .form-control {
+  border-radius: 0.5rem !important;
+  background: #fff !important;
+  /* color: #0d6efd; */
+}
+
+.contact-section .form-control:focus {
+  border-color: var(--site-secondary) !important;
+  box-shadow: 0 0 0 0.25rem rgb(255 23 131 / 25%);
+}
+#contact button[type="submit"] {
+  background-color: var(--site-secondary);
+  color: #f5f5f5;
+  padding: 0.5rem 2rem;
+}
+
+.message {
+  min-height: 10rem !important;
+}
+
+.get-in-touch {
+  color: var(--site-secondary);
+  position: relative;
+}
+
+.single-cta i {
+  color: var(--site-secondary);
+  font-size: 17px;
+}
+.cta-text h4 {
+  color: var(--site-secondary);
+  font-size: 22px;
+  position: relative;
+}
+
+.cta-text h4::before {
+  content: "";
+  position: absolute;
+  bottom: -0%;
+  left: 0%;
+  background-color: #ff1783;
+  width: 30%;
+  height: 3%;
+  display: block;
+  padding-left: 1rem;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+/* FOOTER SECTION */
+.footer-section {
+  background: linear-gradient(rgba(21, 20, 20, 0.8), rgba(21, 20, 20, 0.8)),
+    url("./images/footer-bg.jpg") no-repeat center/cover;
+  position: relative;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.logo-link {
+  background: #fff;
+  padding: 15px;
+  border-radius: 0.3rem;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+  text-align: justify;
+}
+.footer-social-icon span {
+  color: #0d6efd;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg,
+.twitter-bg,
+.insta-bg,
+.linkdin-bg {
+  border: 1px solid #878787;
+  color: #878787;
+  transition: all 0.3s;
+}
+
+.facebook-bg:hover {
+  background-color: #0081dc;
+  border-color: #0081dc;
+  color: #f5f5f5;
+}
+
+.twitter-bg:hover {
+  background-color: #55acee;
+  border-color: #55acee;
+  color: #f5f5f5;
+}
+
+.insta-bg:hover {
+  background: linear-gradient(rgb(126, 2, 175), rgb(252, 10, 103));
+  border-color: rgba(21, 20, 20, 0.8);
+  color: #f5f5f5;
+}
+
+.linkdin-bg:hover {
+  background-color: #034891;
+  border-color: #034891;
+  color: #f5f5f5;
+}
+.footer-widget-heading h3 {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #0d6efd;
+}
+.footer-widget ul li {
+  list-style: none;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer-widget ul li a:hover {
+  color: #0081dc;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: #f5f5f5;
+  font-weight: bold;
+  border-radius: 0.3rem;
+}
+.subscribe-form input:focus {
+  border: 1px solid #0d6efd;
+  box-shadow: inset 0 0 0 0.25rem rgba(65, 23, 255, 0.25);
+  color: #f5f5f5;
+  font-weight: bold;
+  outline: none;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #0d6efd;
+  padding: 13px 20px;
+  border: 1px solid #0d6efd;
+  top: 0;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a {
+  color: #0081dc;
+  text-decoration: none;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #0081dc;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
 }
