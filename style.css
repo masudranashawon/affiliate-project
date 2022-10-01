@@ -25,7 +25,9 @@ body {
 .btn {
   font-weight: bold;
 }
-
+.pointer {
+  cursor: pointer;
+}
 .btn:hover {
   background: var(--btn-hover) !important;
   border-color: var(--btn-hover);
@@ -103,7 +105,7 @@ body {
 }
 /* Modal CSS STARTS */
 
-a {
+/* a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -222,7 +224,7 @@ h2 {
   position: relative;
   top: 2px;
   font-size: 14px;
-}
+} */
 
 .social-login a {
   text-decoration: none;
@@ -264,7 +266,18 @@ h2 {
 .social-login a.google:hover {
   background: #e82e1e;
 }
-
+.modal-close {
+  position: absolute;
+  right: 3rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.modal-close:hover {
+  color: var(--site-secondary);
+  transform: rotate(180deg);
+}
+/* 
 .control {
   display: block;
   position: relative;
@@ -351,7 +364,7 @@ h2 {
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #7e0cf5;
   opacity: 0.2;
-}
+} */
 
 /* Modal CSS ENDED */
 

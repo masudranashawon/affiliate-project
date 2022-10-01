@@ -28,6 +28,110 @@
     <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
+    <!-- MODAL SECTION -->
+    <section class="modal-section">
+      <div class="container">
+        <div
+          class="modal fade modal-dialog modal-xl"
+          id="loginModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="content p-5">
+                <span>
+                  <i
+                    class="fa-solid fa-xmark modal-close"
+                    data-bs-dismiss="modal"
+                  ></i>
+                </span>
+                <!-- <div class="container"> -->
+                <div class="row row-cols-1 row-cols-lg-2">
+                  <div class="col d-none d-lg-block col-lg-5">
+                    <img
+                      src="./images/login-img.jpg"
+                      alt="Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col col-lg-7">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        <div class="mb-3">
+                          <h3 class="text-primary">Login</h3>
+                        </div>
+                        <form action="#" method="post">
+                          <div class="form-group first">
+                            <label class="mb-1" for="username">Username</label>
+                            <input
+                              type="text"
+                              class="form-control mb-2"
+                              id="username"
+                            />
+                          </div>
+                          <div class="form-group last mb-4">
+                            <label class="mb-1" for="password">Password</label>
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="password"
+                            />
+                          </div>
+                          <div class="d-flex mb-2 align-items-center">
+                            <input
+                              class="form-check-input me-2"
+                              type="checkbox"
+                              value=""
+                              id="remember-me"
+                              checked
+                            />
+                            <label
+                              class="form-check-label me-5 pointer"
+                              for="remember-me"
+                            >
+                              Remember Me
+                            </label>
+                            <span class="ml-auto"
+                              ><a
+                                href="#"
+                                class="forgot-pass text-decoration-none"
+                                >Forgot Password ?</a
+                              ></span
+                            >
+                          </div>
+                          <input
+                            type="submit"
+                            value="Login"
+                            class="btn btn-block btn-primary ps-5 pe-5 mt-3"
+                          />
+                          <span class="d-block text-left my-4 text-muted"
+                            >&mdash;&mdash; or login with &mdash;&mdash;</span
+                          >
+                          <div class="social-login">
+                            <a href="#" class="facebook">
+                              <span class="fa-brands fa-facebook-f mr-3"></span>
+                            </a>
+                            <a href="#" class="twitter">
+                              <span class="fa-brands fa-twitter mr-3"></span>
+                            </a>
+                            <a href="#" class="google">
+                              <span class="fa-brands fa-google mr-3"></span>
+                            </a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HEADER STARTS -->
     <header>
       <!-- Navar Starts -->
       <section id="navar-section">
@@ -82,7 +186,7 @@
                     href="#"
                     class="nav-link fw-bold shadow s-d text-white btn-sm pd-btn btn"
                     data-bs-toggle="modal"
-                    data-bs-target="#loginModal"
+                    data-bs-target="#signupModal"
                     data-bs-whatever="@getbootstrap"
                     >Sign Up</a
                   >
@@ -253,149 +357,6 @@
       </section>
     </header>
     <main>
-      <!-- MODAL SECTION -->
-      <section class="modal-section">
-        <div
-          class="modal fade modal-dialog modal-xl"
-          id="loginModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="content">
-                <!-- <div class="container"> -->
-                <div class="row">
-                  <div class="col-md-6">
-                    <img
-                      src="./images/login-img.jpg"
-                      alt="Image"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-md-6 contents">
-                    <div class="row justify-content-center">
-                      <div class="col-md-8">
-                        <div class="mb-4">
-                          <h3>Sign In</h3>
-                          <p class="mb-4">
-                            Lorem ipsum dolor sit amet elit. Sapiente sit aut
-                            eos consectetur adipisicing.
-                          </p>
-                        </div>
-                        <form action="#" method="post">
-                          <div class="form-group first">
-                            <label for="username">Username</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="username"
-                            />
-                          </div>
-                          <div class="form-group last mb-4">
-                            <label for="password">Password</label>
-                            <input
-                              type="password"
-                              class="form-control"
-                              id="password"
-                            />
-                          </div>
-                          <div class="d-flex mb-5 align-items-center">
-                            <label class="control control--checkbox mb-0"
-                              ><span class="caption">Remember me</span>
-                              <input type="checkbox" checked />
-                              <div class="control__indicator"></div>
-                            </label>
-                            <span class="ml-auto"
-                              ><a href="#" class="forgot-pass"
-                                >Forgot Password</a
-                              ></span
-                            >
-                          </div>
-                          <input
-                            type="submit"
-                            value="Log In"
-                            class="btn btn-block btn-primary"
-                          />
-                          <span class="d-block text-left my-4 text-muted"
-                            >&mdash; or login with &mdash;</span
-                          >
-                          <div class="social-login">
-                            <a href="#" class="facebook">
-                              <span class="icon-facebook mr-3"></span>
-                            </a>
-                            <a href="#" class="twitter">
-                              <span class="icon-twitter mr-3"></span>
-                            </a>
-                            <a href="#" class="google">
-                              <span class="icon-google mr-3"></span>
-                            </a>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- </div> -->
-              </div>
-              <!-- <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <div class="mb-3">
-                  <label for="email-adress" class="form-label"
-                    >Email Address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email-adress"
-                    placeholder="name@example.com"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="password" class="form-label">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="Enter your Password"
-                  />
-                  <div class="form-check mt-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                      checked
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Remember me
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Back Home
-                </button>
-                <input type="submit" value="Login" class="btn btn-success" />
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- ABOUT SECTION -->
       <section id="about" class="pt-5 pb-5">
         <div class="container">
