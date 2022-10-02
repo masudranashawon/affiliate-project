@@ -13,7 +13,6 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-
     <!-- Fontawesome CDN Link -->
     <link
       rel="stylesheet"
@@ -32,10 +31,10 @@
     <section class="modal-section">
       <div class="container">
         <div
-          class="modal fade modal-dialog modal-xl"
+          class="modal fade modal-xl"
           id="loginModal"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
+          aria-labelledby="loginModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog">
@@ -79,21 +78,26 @@
                               id="password"
                             />
                           </div>
-                          <div class="d-flex mb-2 align-items-center">
-                            <input
-                              class="form-check-input me-2"
-                              type="checkbox"
-                              value=""
-                              id="remember-me"
-                              checked
-                            />
-                            <label
-                              class="form-check-label me-5 pointer"
-                              for="remember-me"
-                            >
-                              Remember Me
-                            </label>
-                            <span class="ml-auto"
+                          <div
+                            class="row row-cols-1 row-cols-xl-2 mb-2 align-items-center"
+                          >
+                            <div class="col">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="remember-me"
+                                checked
+                              />
+                              <label
+                                class="form-check-label me-5 pointer"
+                                for="remember-me"
+                              >
+                                Remember Me
+                              </label>
+                            </div>
+
+                            <span class="ml-auto col"
                               ><a
                                 href="#"
                                 class="forgot-pass text-decoration-none"
@@ -131,7 +135,434 @@
         </div>
       </div>
     </section>
-    <!-- HEADER STARTS -->
+
+    <section class="signup-modal-section">
+      <div class="container">
+        <div
+          class="modal fade modal-xl"
+          id="signupModal"
+          tabindex="-1"
+          aria-labelledby="signupModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content modal-dialog-scrollable rounded-4 p-5">
+              <span>
+                <i
+                  class="fa-solid fa-xmark modal-close"
+                  data-bs-dismiss="modal"
+                ></i>
+              </span>
+              <div class="row">
+                <h2 class="text-primary mb-3">Publisher Sign up Form</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatibus cupiditate vero accusantium earum consequuntur
+                  fugit sunt iste hic molestiae, natus quis impedit libero iusto
+                  ut! Architecto corrupti quibusdam impedit. Natus, accusamus
+                  culpa eos libero sapiente id obcaecati ratione, animi quae
+                  deserunt doloremque assumenda excepturi ducimus aliquid
+                  voluptate aut, unde est.
+                </p>
+                <p class="fw-bold">
+                  This star field mean this field is required (<span class="req"
+                    >*</span
+                  >)
+                </p>
+              </div>
+              <div class="row ps-0">
+                <h4 class="text-primary mt-3 mb-3">Personal Information:</h4>
+              </div>
+              <form action="#" method="post" class="row g-3">
+                <div class="col-md-4">
+                  <label for="firstName" class="form-label"
+                    >First Name <span class="req">*</span></label
+                  >
+                  <input type="text" class="form-control" id="firstName" />
+                </div>
+                <div class="col-md-4">
+                  <label for="lastName" class="form-label"
+                    >Last Name <span class="req">*</span></label
+                  >
+                  <input type="text" class="form-control" id="lastName" />
+                </div>
+                <div class="col-md-4">
+                  <label for="company" class="form-label">Company Name</label>
+                  <input type="text" class="form-control" id="company" />
+                </div>
+                <div class="col-md-6">
+                  <label for="emailAdd" class="form-label"
+                    >Email Adress <span class="req">*</span></label
+                  >
+                  <input type="email" class="form-control" id="emailAdd" />
+                </div>
+                <div class="col-md-6">
+                  <label for="confEmal" class="form-label"
+                    >Confirm Email Address <span class="req">*</span></label
+                  >
+                  <input type="email" class="form-control" id="confEmal" />
+                </div>
+                <div class="col-md-6">
+                  <label for="reg-password" class="form-label"
+                    >Password <span class="req">*</span></label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="reg-password"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="confPass" class="form-label"
+                    >Confirm Password <span class="req">*</span></label
+                  >
+                  <input type="password" class="form-control" id="confPass" />
+                </div>
+                <div class="row">
+                  <h4 class="text-primary mt-5">Address:</h4>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputAddress" class="form-label"
+                    >Address <span class="req">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="1234 Main St"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputAddress2" class="form-label"
+                    >Address 2
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="Apartment, studio, or floor"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputCity" class="form-label"
+                    >City <span class="req">*</span></label
+                  >
+                  <input type="text" class="form-control" id="inputCity" />
+                </div>
+                <div class="col-md-4">
+                  <label for="state" class="form-label"
+                    >State / Province <span class="req">*</span></label
+                  >
+                  <input type="text" class="form-control" id="state" />
+                </div>
+                <div class="col-md-4">
+                  <label for="zip" class="form-label"
+                    >ZIP / Postal Code <span class="req">*</span></label
+                  >
+                  <input type="text" class="form-control" id="zip" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputCountry" class="form-label"
+                    >Country <span class="req">*</span></label
+                  >
+                  <select id="inputCountry" class="form-select">
+                    <option selected>Select Country</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BA">Bosnia-Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BR">Brazil</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="CV">Cape Verde</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="TP">East Timor</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="FP">French Polynesia</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GP">Guadeloupe (French)</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Laos</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macau</option>
+                    <option value="MK">Macedonia</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MH">Marshall Islands</option>
+                    <option value="MQ">Martinique (French)</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="MD">Moldavia</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="AN">Netherlands Antilles</option>
+                    <option value="NC">New Caledonia (French)</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="KP">North Korea</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Reunion (French)</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russia</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SK">Slovak Republic</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="KR">South Korea</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SZ">Swaziland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syria</option>
+                    <option value="TW">Taiwan</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VI">US Virgin Islands</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VA">Vatican City State</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="VN">Vietnam</option>
+                    <option value="WF">Wallis and Futuna Islands</option>
+                    <option value="YE">Yemen</option>
+                    <option value="YU">Yugoslavia</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputZip" class="form-label"
+                    >Zip <span class="req">*</span></label
+                  >
+                  <input type="text" class="form-control" id="inputZip" />
+                </div>
+                <div class="col-md-4">
+                  <label for="inputNum" class="form-label"
+                    >Number <span class="req">*</span></label
+                  >
+                  <input type="number" class="form-control" id="inputNum" />
+                </div>
+                <div class="row">
+                  <h4 class="text-primary mt-5">Website Information:</h4>
+                </div>
+                <div class="col-md-12">
+                  <label for="websiteUrl" class="form-label"
+                    >Website URL <span class="req">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="websiteUrl"
+                    value="https://"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label for="websiteDesc" class="form-label"
+                    >Website Description <span class="req">*</span></label
+                  >
+                  <textarea
+                    class="form-control websiteDesc"
+                    id="websiteDesc"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="col-md-12">
+                  <label for="phoneVerify" class="form-label"
+                    >Do you want phone verification on your site?</label
+                  >
+                  <select
+                    name="phoneVerify"
+                    id="phoneVerify"
+                    class="form-select"
+                  >
+                    <option value="selected" selected>Choose Option...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="whearHear" class="form-label"
+                    >How did you hear about Affiliate Track?</label
+                  >
+                  <textarea
+                    class="form-control whearHear"
+                    id="whearHear"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="privacyCheck"
+                    />
+                    <label class="form-check-label" for="privacyCheck">
+                      I have read and agree to the privacy policy
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-primary pt-2 pb-2 ps-5 pe-5"
+                  >
+                    Sign in
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL SECTION ENDED -->
+
+    <!-- HEADER SECTION STARTS -->
     <header>
       <!-- Navar Starts -->
       <section id="navar-section">
@@ -356,8 +787,9 @@
         </div>
       </section>
     </header>
+    <!-- HEADER SECTION ENDED -->
     <main>
-      <!-- ABOUT SECTION -->
+      <!-- ABOUT SECTION STARTS -->
       <section id="about" class="pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -404,7 +836,8 @@
           </div>
         </div>
       </section>
-      <!-- COUNTER SECTION -->
+      <!-- ABOUT SECTION ENDED -->
+      <!-- COUNTER SECTION STARTS -->
       <section id="counter" class="counter-sec">
         <div class="container">
           <div class="col-lg-12">
@@ -554,7 +987,8 @@
           </div>
         </div>
       </section>
-      <!-- SERVICE SECTION -->
+      <!-- COUNTER SECTION ENDED -->
+      <!-- ADVERTISERS SERVICE SECTION STARTS -->
       <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -644,6 +1078,8 @@
           </div>
         </div>
       </section>
+      <!-- ADVERTISERS SERVICE SECTION ENDED -->
+      <!-- BRANDS SECTION STARTS -->
       <section id="work" class="work-with pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -684,7 +1120,8 @@
           </div>
         </div>
       </section>
-      <!-- SERVICE SECTION -->
+      <!-- BRANDS SECTION ENDED -->
+      <!-- PUBLISHER SERVICE SECTION STARTS -->
       <section id="publishers" class="publishers-service-sec pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -774,7 +1211,8 @@
           </div>
         </div>
       </section>
-      <!-- TEAM CARD SECTION  -->
+      <!-- PUBLISHER SERVICE SECTION ENDED -->
+      <!-- TEAM CARD SECTION STARTS -->
       <section id="team" class="team-section pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -858,19 +1296,19 @@
                 </div>
                 <div class="profile-thumb-block">
                   <img
-                    src="./images/masud.jpg"
+                    src="./images/dipannita.png"
                     alt="profile-image"
                     class="profile"
                   />
                 </div>
                 <div class="card-content">
-                  <h3>Masud Rana Shawon<small>Newbie (Beginner)</small></h3>
+                  <h3>Dipannita Das<small>Digital Marketer</small></h3>
                   <div class="icon-block">
-                    <a href="https://www.facebook.com/masudranashawon786"
+                    <a href="https://www.facebook.com/Dipannitadashiya"
                       ><i class="fa-brands fa-facebook-f"></i></a
-                    ><a href="https://twitter.com/MasudRanaShawo1"
+                    ><a href="https://twitter.com/Dipannitahiya"
                       ><i class="fa-brands fa-twitter"></i></a
-                    ><a href="https://www.instagram.com/masudranashawon786"
+                    ><a href="https://www.instagram.com/hiya_smiles/"
                       ><i class="fa-brands fa-instagram"></i
                     ></a>
                   </div>
@@ -907,7 +1345,8 @@
           </div>
         </div>
       </section>
-      <!-- CONTACT SECTION -->
+      <!-- TEAM CARD SECTION ENDED -->
+      <!-- CONTACT SECTION STARTS -->
       <section id="contact" class="contact-section pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -923,34 +1362,36 @@
               <h2 class="b-class-secondary mb-3">
                 Send Message <i class="fa-regular fa-comment-dots"></i>
               </h2>
-              <div class="form-floating mb-3 rounded-5">
-                <input
-                  type="text"
-                  class="form-control fw-bold rounded-5"
-                  id="name"
-                  placeholder="Username"
-                />
-                <label for="name">Enter Your Name</label>
-              </div>
-              <div class="form-floating mb-3 rounded-5">
-                <input
-                  type="email"
-                  class="form-control fw-bold rounded-5"
-                  id="email"
-                  placeholder="name@example.com"
-                />
-                <label for="email">Email address</label>
-              </div>
-              <div class="form-floating message mb-3 rounded-5">
-                <textarea
-                  class="form-control message fw-bold rounded-5"
-                  id="message"
-                  rows="3"
-                  placeholder="Password"
-                ></textarea>
-                <label for="message">Your message gose here...</label>
-                <button class="btn mt-3" type="submit">Submit</button>
-              </div>
+              <form action="#">
+                <div class="form-floating mb-3 rounded-5">
+                  <input
+                    type="text"
+                    class="form-control fw-bold rounded-5"
+                    id="name"
+                    placeholder="Username"
+                  />
+                  <label for="name">Enter Your Name</label>
+                </div>
+                <div class="form-floating mb-3 rounded-5">
+                  <input
+                    type="email"
+                    class="form-control fw-bold rounded-5"
+                    id="email"
+                    placeholder="name@example.com"
+                  />
+                  <label for="email">Email address</label>
+                </div>
+                <div class="form-floating message mb-3 rounded-5">
+                  <textarea
+                    class="form-control message fw-bold rounded-5"
+                    id="message"
+                    rows="3"
+                    placeholder="Password"
+                  ></textarea>
+                  <label for="message">Your message gose here...</label>
+                  <button class="btn mt-3" type="submit">Submit</button>
+                </div>
+              </form>
             </div>
             <div class="p-sm-3 col-md-5 col-sm-12 col-xs-12 mt-5 mt-md-2">
               <div class="single-cta">
@@ -988,7 +1429,9 @@
           </div>
         </div>
       </section>
+      <!-- CONTACT SECTION ENDED -->
     </main>
+    <!-- FOOTER SECTION STARTS -->
     <footer class="footer-section">
       <div class="container">
         <div class="footer-content pt-5 pb-5">
