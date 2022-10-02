@@ -1,6 +1,6 @@
 /* Google Font CDN Link */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+/* GLOBAL CSS STARTS */
 :root {
   --site-secondary: rgb(255, 23, 131) !important;
   --btn-hover: #212529 !important;
@@ -72,7 +72,7 @@ body {
 
 ::-webkit-scrollbar-track {
   border-radius: 100vh;
-  background: rgb(172, 172, 172);
+  background: rgb(194, 192, 192);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -112,6 +112,8 @@ body {
   background: #333;
   width: 50px;
 }
+/* GLOBAL CSS ENDED */
+
 /* Modal CSS STARTS */
 
 .social-login a {
@@ -219,6 +221,7 @@ body {
 }
 
 .navbar {
+  box-shadow: 0 0 0.3rem rgb(0 0 0 / 75%);
   background: rgba(256, 256, 256, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -589,6 +592,7 @@ body {
 }
 
 /* Team Card  */
+
 /*Profile Card 3*/
 .team-card {
   /* width: 100%; */
@@ -991,3 +995,40 @@ body {
   font-size: 14px;
   color: #878787;
 }
+
+/* RESPONSIVE CSS STARS */
+@media only screen and (max-width: 1024px) {
+  .main-heading {
+    font-size: 3.4rem !important;
+    color: whitesmoke;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 3rem !important;
+  }
+  .hero-section .fs-4 {
+    font-size: 16px !important;
+  }
+  .mb-cs {
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-heading {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .pd-btn {
+    padding: 0.7rem 2rem !important;
+    border-radius: 1.4rem;
+  }
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
+  }
+}
+/* RESPONSIVE CSS ENDED */
