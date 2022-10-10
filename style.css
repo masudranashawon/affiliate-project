@@ -12,7 +12,7 @@ body {
 }
 
 .req {
-  color: rgb(255, 0, 51);
+  color: rgb(255, 0, 21);
   font-weight: bold;
 }
 
@@ -112,6 +112,28 @@ body {
   top: 60%;
   background: #333;
   width: 50px;
+}
+
+#up-arrow {
+  font-size: 2.2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90%;
+  left: calc(100vw - 6vw);
+  display: inline-block;
+  z-index: 97;
+  transition: all 0.3s;
+}
+
+#up-arrow i {
+  opacity: 0.5;
+}
+
+#up-arrow i:hover {
+  color: #f5f5f5 !important;
+  background-color: #ff1783 !important;
+  box-shadow: 0 0 1rem rgba(255, 23, 131, 1) !important;
+  opacity: 1;
 }
 /* GLOBAL CSS ENDED */
 
@@ -324,6 +346,8 @@ body {
     0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1),
     0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12),
     0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+
+  cursor: pointer;
 }
 
 .l-bg-cherry {
@@ -792,8 +816,12 @@ body {
 }
 
 .cta-text span {
-  color: #757575;
   font-size: 15px;
+}
+
+.cta-text span a {
+  text-decoration: none;
+  color: rgb(33, 37, 41);
 }
 
 /* FOOTER SECTION */
