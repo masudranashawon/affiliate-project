@@ -9,6 +9,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .req {
@@ -239,9 +240,6 @@ body {
 /* Modal CSS ENDED */
 
 /* Custom Css section */
-body {
-  font-family: "Roboto", sans-serif !important;
-}
 
 .navbar {
   box-shadow: 0 0 0.3rem rgb(0 0 0 / 75%);
